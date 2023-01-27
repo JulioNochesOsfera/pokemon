@@ -5,7 +5,8 @@ import CardPokemon from "../components/CardPokemon";
 export const RouteNavigator = () =>{
     return(
         <Routes>
-            <Route path="/" element={<ListPokemon />} />
+            <Route path={'/pokemon'} element={<ListPokemon />} />
+            <Route path={'/'} element={<ListPokemon />} />
             <Route path="/page/:page" element={<ListPokemon />} />
             <Route path="/detail-pokemon/:id" element={<CardPokemon/>} />
         </Routes>
